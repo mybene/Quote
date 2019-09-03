@@ -1,0 +1,41 @@
+
+    <div class=" formulaire">
+      <app-quote-form (emitQuote)="addNewQuote($event)"></app-quote-form>
+  </div>
+
+  <h3 text-align="center" text="white">Your quotes :</h3>
+  <div *ngFor="let quote of quotes; let i='index'" class="listed  ">
+      
+      <br><br>
+      <ul>
+          <li>
+              <p appHighligth><b>{{quote.text}} </b> <em> published by: </em>{{quote.writtenBy}} <em>--Author</em>
+                  {{quote.author}} due on {{quote.completeDate|date|uppercase}} </p>
+  
+              <button (click)="upvote(i)" class="btn btn-primary btn-xs">
+                  <i class="up"></i>{{quote.upvotes}}<img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMnvYaVzHjdbCmgYsLF8XT4aIks_oKu47sNPpbXxT22a7Q1HqbQ"
+                      height="38" width="38">
+              </button>&nbsp;&nbsp;&nbsp;
+              <button (click)="downvote(i)" class="btn btn-primary btn-xs">
+                  <i class="down"></i>{{quote.downvotes}}<img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxmgdkfbJY0tkUaRvt6-uNKLkReAiidxFh9hYKfCegG0eTxKUpvg"
+                      height="38" width="38">
+              </button>&nbsp;&nbsp;&nbsp;
+  
+              <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
+          </li>
+  
+  
+      </ul>
+  </div>
+  
+      
+ 
+
+
+
+
+  
+  
+
