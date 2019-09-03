@@ -9,7 +9,7 @@ This project is  angular for creating a quote or input a know quote with its aut
 ## User requirements
 The user must have:
 * laptop  with Ubuntu /MAC OS
-* internet connexion.
+* internet connexion.      
 * node Js installed.
 * install angular CLI version 8.2.2
  
