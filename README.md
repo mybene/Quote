@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This project is  angular for creating a quote or input a know quote with its author and the due date.the user can like or dislike the quotes even to delete them.
 
 ## User requirements
-The user must have:
+The user must have:      
 * laptop  with Ubuntu /MAC OS
 * internet connexion.      
 * node Js installed.      
