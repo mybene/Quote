@@ -1,0 +1,34 @@
+#add {
+    border-radius: 2px;
+    color: blue;
+    background-color: antiquewhite;
+    padding:20px;
+    font-weight: bolder;
+  }
+  
+  form {
+    background:transparent;
+    opacity:0.6;
+    background-color: beige;
+    border: 1px solid black;
+    color:blue;
+   
+  }
+  .listed{
+    background-color: #ffff;
+    opacity: 0.5;
+  }
+  h2{
+    color:white;
+  }
+  h3{
+    color:red
+  }
+  #formulaire{
+    width:100%;
+  }
+  label{
+    font-weight: 50;
+    font-size: 18px;
+  }
+  
